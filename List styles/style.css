@@ -1,0 +1,26 @@
+body {
+    padding: 5% 10%;
+    font-size: 2rem;
+}
+
+ol {
+    list-style-type: decimal-leading-zero; /* change numbers for something else */
+    padding: 0;
+}
+
+ul {
+    line-height: 1.6;
+    list-style-position: inside;
+    /*list-style: square url("checkmark.png") inside; !*shorthand *!*/
+
+}
+
+ul li:nth-child(2) { /* specific which item - here second)*/
+    color: red;
+}
+
+ul ::marker { /* sudo element not class */
+    color: red;
+    font-size: 1.2em;
+    content: "XYX"
+}

@@ -1,0 +1,39 @@
+/* when we select item in devtool we have margin > border > padding >content
+    margin is around all the stuff and shows whole size of element
+    border is border nothing to add - you can make yours
+    padding is space between border and content
+ */
+
+* { /* hard reset of css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* calculation include border padding and content instead of only content */
+}
+
+.container {
+    border: 2px dashed red;
+    /*width: 400px;  here is all about content, padding and border */
+    font-size: 1.5rem;
+    margin: 1.5rem 2em; /* 1.5 top/bottom and 2 right/left */
+    /*margin-top: 1.5em;*/
+    /*margin-right: 2rem;*/
+    /*margin-bottom: 1.5em;*/
+    /*margin-left: 2em;*/
+    padding: 1.5rem 2em; /* works the same as margin - shorthand */
+    /*border-top: 5px solid blue;*/ /* same as above -
+    we can do with whichever side of border
+    /*border-top-style: double;*/
+    outline: 5px solid purple; /* its outline for border */
+    outline-offset: 5px; /* space between outline and border. Can have negative value */
+}
+
+.circle {
+    margin: 3rem auto; /* auto set element on center */
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #000;
+    border-radius: 50px;
+    outline: 2px solid red;
+    offset: 0.25rem;
+}

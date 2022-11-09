@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ /* body {
+    width: 100vw; /* it creates a problem of
+    bottom scrollbar - instead of that use 100%. In case of body element its
+    already 100% so we dont have to set it up*/
+/*} */
+
+/* body {
+    min-height: 100vh; /* when we want our body element to be as 100% of height */
+/*} */
+
+
+p {
+    font-size: 16px; /* pixels are most common and mostly used unit */
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    border: 2px dashed red;
+    width: 50%; /* width is relative to parent
+    so if parent has 50% of page then child gonna get 50% of that 50% */
+    font-size: 3rem;
+    padding: 0.5em; /* it applies to above rem */
+}
+
+main {
+    font-size: 2rem;
+    width: 50vw;  /* viewport Width - mostly used % instead of that */
+    background-color: skyblue;
+}
+
+p {
+    font-size: 1rem;  /*  1 root element */
+    /* font-size: 2em; /* so parent look at root element,
+    double that (2rem) and 2em double that again  so its 64px */
+    width: 40ch; /* it has 40 characters before line wraps */
+}

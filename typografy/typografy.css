@@ -1,0 +1,31 @@
+/* import font from fonts.google.com  - add import and change font family */
+
+
+body {
+    padding: 10%;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*input, button {*/
+/*    font: inherit; !* inherit font from body *!*/
+/*}*/
+
+/* Text editing */
+
+/*p {*/
+/*    text-decoration: none; !* underline,overline, none etc *!*/
+/*    text-transform: uppercase; !* uppercase lowercase etc*!*/
+/*    text-align: justify; !* text on chosen side of website *!*/
+/*    text-indent: 2em; !* indent in first line *!*/
+/*}*/
+
+/* reading */
+
+/*p {*/
+/*    line-height: 1.5; !* distance between lines *!*/
+/*    letter-spacing: 0.2em; !* distance between letters *!*/
+/*    word-spacing: 0.3em; !* space between words *!*/
+/*    font-weight: 100; !* boldness of font *!*/
+/*    font-style: oblique;*/
+/*}*/
