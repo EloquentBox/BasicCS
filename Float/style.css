@@ -1,0 +1,35 @@
+body {
+    font-size: 1.5rem;
+}
+
+.block {
+    width: 30vw;
+    height: 30vw;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+}
+
+.left {
+    float: left;
+    margin-right: 1rem;
+}
+
+.right {
+    float: right;
+    margin-left: 1rem;
+}
+
+.clear {
+    clear: both;
+}
+
+section {
+    background-color: bisque;
+    border: 1px solid #333;
+    padding: 1rem;
+    display: flow-root; /* get container element to extend all around and contain floating element */
+}
+
+/* cannot add margin to text because its float so it will apply to webpage not to float element */
+/* Float are to flow elements around */
