@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5rem;
+    min-height: 200vh;
+}
+
+.outer-container {
+    border: 3px dashed #000;
+    width: 75vw;
+    height: 85vh;
+    margin: 40px auto;
+    position: relative;
+}
+
+.inner-container {
+    border: 2px solid #00f;
+    width: 40vw;
+    height: 50vh;
+    margin: 200px auto;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    padding: 1rem;
+}
+
+.absolute {
+    background-color: #00f;
+    /*position: static; !* default for all elements *!*/
+    position: absolute; /* it changes nothing until you set top/bottom/left/right */
+
+    /* absolute element needs relative parent to not floating around webpage */
+    /*if we set any parent element as position: relative then it will stay inside borders of parent */
+
+    top: 0; /* px - fe. 50px from top */
+    left: 0; /* we can set it to -10000px to remove something from visibility */
+    z-index: 1; /* when we set it for higher than other element
+    then it will be on the top of that element */
+}
+
+.relative {
+    background-color: #f00;
+    position: relative;
+    top: 300px;
+    left: 100px;
+}
+
+.fixed { /* fixed is out of the flow of the page
+        so it will stay in the same point even if you scroll the page */
+    background-color: green;
+    position: fixed;
+    top: 100px;
+}
+
+.sticky { /* when you scroll down it will stick to the top of the page
+            and stay there until it reaches parent boundaries */
+    background-color: #000;
+    position: sticky;
+}
+
+html {
+    scroll-behavior: smooth; /* smooth move between the sections when you click on menu */
+}
+
+
+section {
+    height: 100vh;
+}
+
+.blue {
+    background-color: #00f;
+}
+.red {
+    background-color: #ff0000;
+}
+.green {
+    background-color: green;
+}
+
+header, footer {
+    color: #fff;
+    text-align: center;
+    height: 100px;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+footer {
+    background-color: #000;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    font-size: 3rem;
+}
+
+a:visited {
+    color: #fff;
+}
+
+.social {
+    background-color: royalblue;
+    color: #fff;
+    font-size: inherit;
+    padding: 1rem;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    z-index: 1;
+}
