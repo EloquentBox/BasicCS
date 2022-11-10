@@ -1,0 +1,38 @@
+.columns {
+    column-count: 4; /* every paragraph is in column next to each other */
+    column-width: 150px; /* not less than this width */
+
+    /* it will make less column if width of viewport gonna make smaller */
+
+    /*columns: 4 250px; !* shorthand *!*/
+
+    column-rule: 3px solid #333; /* line between columns */
+    column-gap: 3rem; /* space between columns */
+ }
+
+.columns p {
+    margin-top: 0;
+}
+
+.columns h2 {
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    break-inside: avoid; /* not splitting header between two columns */
+    break-before: column; /* keeps h2 on the top of column but can break webpage */
+
+}
+
+.columns .quote {
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span: all;
+    margin-top: 2rem; /* its not as specific as .columns p thats why it doesnt work and you have to specifiy class
+    of where quote is */
+}
+
+.nowrap {
+    white-space: nowrap; /* it never break down The Dude between two lines */
+}
