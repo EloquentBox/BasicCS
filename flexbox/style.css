@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    min-height: 400px;
+    margin-inline: auto; /* central horizontal position */
+    border: 1px solid #000;
+    display: flex; /* attach flex to our container */
+    justify-content: center; /* decide when in container
+    all properties will be  (center, start, end, space-around, space between)*/
+    gap: 1rem; /*can make gap between every element */
+    align-items: center; /* flex start, end, center - where items should be */
+    flex-direction: row; /* column, row, row-reverse*/
+    flex-wrap: wrap; /* items will stay inside container - not overflow */
+    /*flex-flow: row wrap; !* shorthand *!*/
+
+}
+
+.box {
+    min-width: 100px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+
+    /* those three allow to center item */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1; /* if they need to grow to fill up page then they grow the same size */
+    flex-basis: 100px;
+
+}
+
+.box:nth-child(2) {
+    flex-grow: 2; /* if they need to grow the second
+    element gonna take twice more of extra space than the other */
+    order: 4;
+}
+
+/* flex-shrink - opposite of grow - item 1 gonna stay
+    on flex-basis amount and second item gonna get rest of space */
+    /* change flex-flow to nowrap!*/
+    /* shorthand: flex: 1 1 250 - grow shrink basis */
