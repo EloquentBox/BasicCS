@@ -1,0 +1,5 @@
+img {
+    display: block; - takes full height because now its block element not inline
+}
+
+    background-color: hsla(0, 0%, 0%, 0.403); - filter to make picture darker. third % is lighter or darker

@@ -40,3 +40,14 @@ align-content - set how multiple lines are spaces apart from each other
 
 align-content determines spacing between lines
 align-items determines how the items as whole are aligned within container
+
+Examples from 10 pr0 tips:
+
+element at the center of content by flex
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

@@ -1,0 +1,74 @@
+grid-template-columns: 2fr 1fr 1fr; - use whole viewport
+                and makes three columns with width equals fractions (means part of vw)
+                - we can mix it
+
+grid-template-columns: repeat(4, 1fr); - four columns, every equals one fraction. Can be mixed like (2, 1fr 2fr)
+
+grid-template-row: minmax(150px, auto); - minmax is a function - first argument is minimum.
+
+row-gap: 1em; - gap between rows
+columns-gap: 1em; - gap between columns
+gap: 1em; - combine both. can be multiple: gap: 1em 2em;
+
+grid-template-areas:  - here we define names of elements on the page
+
+grid-area -  accepts four values separated by slashes: grid-row-start,
+            grid-column-start, grid-row-end, followed by grid-column-end.
+            grid-area: 1 / 2 / 4 / 6;.
+
+ELEMENTS EDIT:
+grid-column-start: 1;
+grid-column-end: 4; - both use together to define where an element will start
+                      and where ends (in this case it will start in first column and finish at third)
+                      we can use negative number to set end like -2 means second column from the end of vw
+                      if we set start as negative it counts from beginning like -3 means second column from right
+
+grid-column-start: span 3 - it works like below but on left side
+grid-column-end: span 2; - here we decide how many column at right it should take
+
+grid-row-start: 1;
+grid-row-end: 3; - same as above but starts at first row and end at second
+
+grid-column: 1 / 4;
+grid-row: 1 / 3; - SHORTCUTS for above
+
+display: grid;
+place-content: center; - use those two to center content inside grid
+
+order: - If grid items aren't explicitly placed
+        with grid-area, grid-column, grid-row, etc., they are automatically placed according
+        to their order in the source code. We can override this using the order property
+
+
+
+BASIC layout:
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 75px auto 75px;
+    grid-template-areas:
+            "hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn sb sb"
+    "ft ft ft ft ft ft ft ft ft";
+    gap: 1rem;
+}
+
+display: grid; - to apply grid for that element
+grid-template-columns: repeat(9, 1fr); - create nine columns, each 1fr
+auto-grid-rows: 75px auto 75px; -
+grid-template-areas - here we define exactly how our layout gonna looks like:
+                      top of side is header
+                      main elements are in the left and center,
+                      side bar takes two columns on the right
+                      bottom of the page is footer
+
+
+
+
+
+
+
+
+
